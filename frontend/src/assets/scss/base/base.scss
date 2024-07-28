@@ -1,0 +1,41 @@
+html {
+  font-family: $f-family;
+  //font-size: calc(1vw / 0.375);
+  font-weight: 400;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+html,
+body {
+  overscroll-behavior-x: none;
+}
+
+main {
+  &._scroll {
+    overflow: hidden !important;
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+  color: black;
+}
+
+body {
+  font-size: $f-root-size-desktop;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}

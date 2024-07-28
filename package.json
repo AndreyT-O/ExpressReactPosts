@@ -1,0 +1,21 @@
+{
+  "name": "ts-node-user-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd backend && npm run start\" \"cd frontend && npm run start\"",
+    "docker:up": "cd backend && npm run docker:up",
+    "docker:down": "cd backend && npm run docker:down"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tanstack/react-query": "^5.37.1",
+    "axios": "^1.6.8",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5"
+  }
+}
